@@ -1,7 +1,9 @@
 # static-cli
 
+你还在为搭建项目而烦恼么？搭建静态服务器、编译css、制作雪碧图、格式化代码、使用es6?这些统统都自动化处理好了，还在等什么？开启你的静态资源快速开发吧！
+
 ```
 // 开启静态资源开发
-static-cli stylus myproject
+static-cli stylus myproject<项目名称>
 
 ```
