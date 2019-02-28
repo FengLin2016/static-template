@@ -43,3 +43,7 @@ bower_components/
 dist/ 
 gulpfile.js
 package.json
+
+# 不提交文件夹名字
+gitignore
+stylus
