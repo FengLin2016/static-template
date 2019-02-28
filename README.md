@@ -2,6 +2,6 @@
 
 ```
 // 开启静态资源开发
-static-cli stylus myproject
+static-cli stylus myproject<项目名称>
 
 ```
