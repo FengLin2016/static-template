@@ -3,7 +3,7 @@ const connect = require('gulp-connect');
 const watch = require('gulp-watch');
 const notify = require('gulp-notify');
 const spriter = require('gulp-css-spriter');
-const stylus = require('gulp-stylus');
+const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 
@@ -25,11 +25,11 @@ function task_html(path) {
     })) //提醒任务完成
 }
 
-//stylus
+//sass
 function task_css(path) {
   const name = path.match(/([a-zA-Z_-]+)\.(styl|sass|scss|less)/)[1]
   gulp.src(path)
-    .pipe(stylus({
+    .pipe(sass({
       compress: false
     }))
 
@@ -72,7 +72,7 @@ gulp.task('watch', function () {
   gulp.watch(['html/*.html', 'html/*/*.html'], function (options) {
     task_html(options.path)
   });
-  gulp.watch(['css/stylus/*.styl'], function (options) {
+  gulp.watch(['css/s*ss/*.s*ss'], function (options) {
     task_css(options.path)
   });
 });
